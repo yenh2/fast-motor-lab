@@ -5,39 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/cotizaciones.css">
     <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
     <title>Cotizaciones</title>
 </head>
 <body>
+  <div class="row" >
+    <div class="col-sm-3" > 
+  <div class="card" style="width: 25rem;">
+    <img src="/images/carrusel/pulsar.jpg" class="card-img-top" alt="pulsar">
+    <div class="card-body">
+      <h5 class="card-title">BAJAJ PULSAR - RS200</h5>
+      <p class="card-text">Si buscas escarapelar el cuerpo con adrenalina, esta debe ser una firme candidata para tu garaje. Es una moto con cromosomas netamente deportivos, musculosa, corpulenta, atrevida, impetuosa, de alto desempeño. Escoge la azul con blanco o la gris con negro.  Solo algunos podrán domarla. ¿Te atreves?</p>
+      <a href="#" class="btn btn-primary">COTIZAR</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3" > 
+  <div class="card" style="width: 25rem;">
+    <img src="/images/carrusel/250.jpg" class="card-img-top" alt="pulsar">
+    <div class="card-body">
+      <h5 class="card-title">KTM - DUKE 250</h5>
+      <p class="card-text">La nueva Duke 250 ahora cumple con la normativa BS6, traduciéndose en una menor emisión de gases contaminantes sin perder la potencia a la que KTM nos tiene acostumbrados. Una moto especial que lleva consigo toda la tecnología superior de sus hermanas mayores y que este año se renueva para seguir dando cátedra en la categoría de 250 c.c.</p>
+      <a href="#" class="btn btn-primary">COTIZAR</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-sm-3" > 
+  <div class="card" style="width: 25rem;">
+    <img src="/images/carrusel//KTM.jpg" class="card-img-top" alt="pulsar">
+    <div class="card-body">
+      <h5 class="card-title">KTM - DUKE 250</h5>
+      <p class="card-text">La nueva Duke 250 ahora cumple con la normativa BS6, traduciéndose en una menor emisión de gases contaminantes sin perder la potencia a la que KTM nos tiene acostumbrados. Una moto especial que lleva consigo toda la tecnología superior de sus hermanas mayores y que este año se renueva para seguir dando cátedra en la categoría de 250 c.c.</p>
+      <a href="#" class="btn btn-primary">COTIZAR</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3" > 
+  <div class="card" style="width: 25rem;">
+    <img src="/images/carrusel/KWASAKI.jpg" class="card-img-top" alt="pulsar">
+    <div class="card-body">
+      <h5 class="card-title"> KAWASAKI - Z900</h5>
+      <p class="card-text">Elige una supernaked de 948 cc lista para combatir calles, lista para dominar autopistas. Elige sentir que el mundo ha cambiado, y que tú has cambiado con él. Elige la máquina que no comprende de reglas, a no ser que sean las tuyas. Elige la nueva Z900 de Kawasaki, y deja que sea ella quien te muestre de todo lo que es capaz.</p>
+      <a href="#" class="btn btn-primary">COTIZAR</a>
+    </div>
+  </div>
+  </div>
+
+</div>
     <br>
     <br>
-    <div class="container" > 
-        <div class="row vh-100, justify-content-center y align-items-center" >
+    <div class="container-form"  > 
+        <div class="row">
             <div class="col-md-12">
-            <form class="row g-3">
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">Motos</label>
+            <form class="row">
+                <div class="col-mr-6">
+                    <label for="inputState" class="form-label">Elija su motocicleta:</label>
                     <select id="inputState" class="form-select">
                       <option selected></option>
-                      <option>Pulsar Ns 200</option>
-                      <option>Ducati</option>
-                      <option>Honda</option>
+                      <option>Pulsar Rs 200</option>
+                      <option>Duke 250</option>
+                      <option>Kawasaki Z900</option>
                       <option>Yamaha</option>
                     </select>
                   </div>
-                <div class="col-md-6">
-                  <label for="inputNumber1"class="form-label">Cuotas</label>
-                  <input type="number" class="form-control" id="inputNumber1" required autofocus>
+                <div class="col-mr-6">
+                  <label for="inputNumber1"class="form-label">¿En cuántas cuotas desea pagarlo?</label>
+                  <input type="number" class="form-control" id="inputNumber1" placeholder="Tiene un máximo de 60" maxlength="60" required>
                 </div>
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Dirección</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su dirección" required>
+                  <label for="inputAddress" class="form-label">DNI:</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su número de DNI" pattern="[0-8]" minlength="8" maxlength="8" required>
                 </div>
                 <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Teléfono</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese su número de teléfono" required >
+                  <label for="inputAddress2" class="form-label">Teléfono:</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese su número de teléfono" minlength="9" maxlength="9" required pattern="[0-9]">
                 </div>
                 <div class="col-12">
                   <div class="form-check">

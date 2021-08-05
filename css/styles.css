@@ -42,11 +42,19 @@ a {
     text-decoration: none;
     padding-top: 10px;
 }
-form{
-    margin-top: 100px;
+#img-servTec img{
+    width: 20%;
+    height: 300px;
+    margin-top: 50mm;
+    float: left;
+}
+
+#formulario{
+    margin-top: 50px;
     margin-left: 5mm;
     float: left;
-    width: 50%;
+    width: 25%;
+    height: ;
 }
 form p, option{
     font-size: 20px;

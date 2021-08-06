@@ -47,6 +47,10 @@ a {
     height: 300px;
     margin-top: 50mm;
     float: left;
+    transition: all 500ms ease;
+}
+#img-servTec img:hover{
+    transform: scale(1.2);
 }
 
 #formulario{
@@ -58,6 +62,7 @@ a {
 form p, option{
     font-size: 20px;
 }
+
 footer {
     position: absolute;
     top: 1000px;

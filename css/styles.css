@@ -54,12 +54,10 @@ a {
     margin-left: 5mm;
     float: left;
     width: 25%;
-    height: ;
 }
 form p, option{
     font-size: 20px;
 }
-
 footer {
     position: absolute;
     top: 1000px;

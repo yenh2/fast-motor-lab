@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/images/icon.png">
     <title>Cotizaciones</title>
 </head>
 <body>
   <img id="portada" src="/images/home1.png" alt="Portada"/>
-    <ul>
-        <li> <a href="/enlaces/catálogo.html">Catálogo de Motos </li> </a> 
-        <li class="li-selected"> <a href="/enlaces/cotizaciones.html"> Cotización</li></a>
-        <li>Ofertas</li>
-        <li><a href="/enlaces/sesion.html"> Iniciar Sesión</a></li>
-    </ul>
+  <ul>
+    <a href="/index.html"><li>Inicio</li></a> 
+    <li> <a href="/enlaces/catálogo.html">Catálogo de Motos</li></a> 
+    <li class="li-selected"> <a href="/enlaces/cotizaciones.html">Cotización</li></a>
+    <li><a href="/enlaces/sesion.html"> Iniciar Sesión</a></li>
+</ul>
     <br><br>
   <div class="row" >
     <div class="col-sm-3" > 
-  <div class="card" style="width: 25rem;">
+  <div class="card" style="width: 29rem;">
     <img src="/images/carrusel/pulsar.jpg" class="card-img-top" alt="pulsar">
     <div class="card-body">
       <h5 class="card-title">BAJAJ PULSAR - RS200</h5>
@@ -31,7 +32,7 @@
 </div>
 
 <div class="col-sm-3" > 
-  <div class="card" style="width: 25rem;">
+  <div class="card" style="width: 29rem;">
     <img src="/images/carrusel/250.jpg" class="card-img-top" alt="pulsar">
     <div class="card-body">
       <h5 class="card-title">KTM - DUKE 250</h5>
@@ -42,7 +43,7 @@
   </div>
 
   <div class="col-sm-3" > 
-  <div class="card" style="width: 25rem;">
+  <div class="card" style="width: 29rem;">
     <img src="/images/carrusel//KTM.jpg" class="card-img-top" alt="pulsar">
     <div class="card-body">
       <h5 class="card-title">KTM - DUKE 250</h5>
@@ -53,7 +54,7 @@
 </div>
 
 <div class="col-sm-3" > 
-  <div class="card" style="width: 25rem;">
+  <div class="card" style="width: 29rem;">
     <img src="/images/carrusel/KWASAKI.jpg" class="card-img-top" alt="pulsar">
     <div class="card-body">
       <h5 class="card-title"> KAWASAKI - Z900</h5>
@@ -67,9 +68,9 @@
     <br>
     <br>
     <div class="container-form"  > 
-        <div class="row">
-            <div class="col-md-12">
-            <form class="row">
+        <div class="row ">
+            <div class="col-md-6">
+            <form class="row" method="GET">
                 <div class="col-mr-6">
                     <label for="inputState" class="form-label">Elija su motocicleta:</label>
                     <select id="inputState" class="form-select">
@@ -80,17 +81,17 @@
                       <option>Yamaha</option>
                     </select>
                   </div>
-                <div class="col-mr-6">
+                <div class="col-mr-12">
                   <label for="inputNumber1"class="form-label">¿En cuántas cuotas desea pagarlo?</label>
                   <input type="number" class="form-control" id="inputNumber1" placeholder="Tiene un máximo de 60" maxlength="60" required>
                 </div>
                 <div class="col-12">
                   <label for="inputAddress" class="form-label">DNI:</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su número de DNI" pattern="[0-8]" minlength="8" maxlength="8" required>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su número de DNI"  minlength="8" maxlength="8" required>
                 </div>
                 <div class="col-12">
                   <label for="inputAddress2" class="form-label">Teléfono:</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese su número de teléfono" minlength="9" maxlength="9" required pattern="[0-9]">
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese su número de teléfono" minlength="9" maxlength="9" required >
                 </div>
                 <div class="col-12">
                   <div class="form-check">
@@ -104,6 +105,7 @@
                   <button type="submit" class="btn btn-primary">Enviar datos</button>
                 </div>
               </form>
+            </div>
         </div>
         </div>
     </div>

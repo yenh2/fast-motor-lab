@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-size: 18px;
 }
 #portada{
     width: 100%;
@@ -18,36 +18,28 @@ li {
     cursor: pointer;    
     margin-left: 200px;
     display: inline-block;
-}
-.li-selected {
-    background-color: #ffffff;
-}
-.li-disabled {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    cursor: none;    
-}
+}    
+
 li:hover {
     background-color: #ffd044;
 }
-.li-disabled:hover {
-    background-color: #ffffff;
-    color: #777;
-}
+
 select {
     width: 10%;
     font-size: 1em;
 }
+
 a {
     text-decoration: none;
     padding-top: 10px;
 }
   .galeria {
-    height: calc( 300px + 3em);
-    width: 260px;
+    height: calc( 500px + 3em);
+    width: 85%;
     margin:1em auto;
-    border: 1px solid #555;
+    border: 1px solid rgb(255, 255, 255);
     position: relative;  
+    margin-top: 45px;
   }
   
   .galeria img {
@@ -56,11 +48,13 @@ a {
     left: 0;
     opacity: 0;
     transition: opacity 3s;
+    width: 100%;
+    height: 500px;
   }
   
   .galeria input[type=radio] {
     position: relative;
-    bottom: calc(-300px - 1.5em);
+    bottom: calc(-500px - 1.5em);
     left: 1em;
   }
   .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
@@ -81,28 +75,62 @@ a {
     width:350px;
     height:270px;
     margin: 30px;
-    background-color:#b8b8b8;
+    background-color:#e6e6e6;
     margin-top: 10em;
     padding-bottom: 2mm;
+    box-shadow: -1mm 1mm 3mm 1mm #c5c5c5;
 }
+.contenedorfoto img{
+  width: 336px;
+  height: 250px;
+}
+.contenedorfoto img:hover{
+    transform: scale(1.05);
+}
+
 #container-catalogo{
-    margin-left: 12mm;
+    margin-left: 30mm;
 }
 
 .div-precio{
     width: 100%; 
     height: 90px;
-    background-color:#dfdfdf;
+    background-color:#e6e6e6;
     margin-top: 9mm;
     font-size: 25px;
+    box-shadow: -1mm 1mm 3mm 1mm #c5c5c5;
+}
+.div-precio p{
+  margin-left: 8mm;
+  margin-top: 3mm;
+  float: left;
+  font-size: 20px;
+  
 }
 .div-comprar button{
     width: 40%;
     height: 30px;
     margin: 1px solid #0000;
-    background: rgb(255, 230, 3);
+    background: rgb(255, 230, 0);
     float: right;
     margin-right: 10px;
-    margin-top: -2px;
-   
+    margin-top: 12mm; 
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: #bdbdbd;
+}
+
+#title-catalogo{
+  width: 100%;
+  height: 100px;
+  background-color:  #CC0000;
+}
+h2{
+  text-align: center;
+  font-size: 28px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  padding: 25px;
+  color: rgb(255, 255, 255);
 }
